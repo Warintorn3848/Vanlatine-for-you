@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💛 Vanlentine 2025 💕</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Itim&family=Noto+Sans+Thai:wght@300;400;700&display=swap');
+
+        body {
+            font-family: 'Noto Sans Thai', sans-serif;
+            text-align: center;
+            background-color: #F9F5F2; /* สีครีมมินิมอล */
+            color: #5C3D2E; /* น้ำตาลอบอุ่น */
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #8D6E63;
+            font-family: 'Itim', cursive;
+        }
+
+        p {
+            font-size: 1.1em;
+            margin: 15px 20px;
+            line-height: 1.8;
+        }
+
+        .message-box {
+            background: #FFF8E1; /* เหลืองพาสเทล */
+            padding: 20px;
+            border-radius: 15px;
+            text-align: left;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+            font-size: 1em;
+            animation: fadeIn 1s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .signature {
+            text-align: right;
+            font-size: 1em;
+            color: #D2691E;
+            margin-top: 10px;
+            font-family: 'Itim', cursive;
+        }
+
+        .love-song {
+            margin-top: 20px;
+            font-size: 1.1em;
+        }
+
+        .love-song a {
+            color: #8D6E63;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .love-song a:hover {
+            text-decoration: underline;
+        }
+
+        button {
+            background-color: #8D6E63;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1.1em;
+            cursor: pointer;
+            border-radius: 15px;
+            margin-top: 20px;
+            font-family: 'Itim', cursive;
+        }
+
+        button:hover {
+            background-color: #6D4C41;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        /* รูปคู่ */
+        .photo {
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            border-radius: 15px;
+            margin-top: 20px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        /* ฟอร์มตอบกลับ */
+        .response-form {
+            margin-top: 30px;
+            font-size: 1.1em;
+        }
+
+        .response-form input {
+            font-size: 1em;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #A1887F;
+            text-align: center;
+            outline: none;
+            width: 70%;
+        }
+
+        .response-form button {
+            margin-left: 10px;
+        }
+
+        /* สไลด์โชว์รูป */
+        .slideshow-container {
+            position: relative;
+            margin-top: 20px;
+            height: 400px; /* กำหนดความสูง */
+        }
+
+        .slide {
+            position: absolute;
+            display: none;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%); /* ให้รูปอยู่กลาง */
+            width: 100%;
+            height: 100%;
+        }
+
+        .slide img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .slide.active {
+            display: block;
+        }
+
+        /* Audio player style */
+        audio {
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 10px;
+            border: 1px solid #A1887F;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ถึงพี่ออย 💛</h1>
+        <p>สุขสันต์วันวาเลนไทน์นะคะที่รัก </p>
+        <p>เค้ามีอะไรจะบอกอ้วนล้วย 🥰</p>
+        <button id="showMessage">กดตรงนี้เร็ว </button>
+        <p>กด ok ด้วยนะ</p>
+        <!-- เปิดเพลงในเว็บไซต์ -->
+        <div class="love-song">
+            <p>🎶 ฟังเพลงก่องง 🎶</p>
+            <audio controls>
+                <source src="Tattoo Colour - รักแรกพบ [Music Video](mp3j.cc).mp3" type="audio/mp3">
+            </audio>
+        </div>
+
+        <!-- รูปภาพที่ต้องการแสดงบนหน้าแรก -->
+        <img src="S__8863774.jpg" alt="" class="photo">
+
+        <div id="specialMessage" class="hidden">
+            <div class="message-box">
+                <p><strong>พี่ออย</strong></p>
+                <p>
+                    เค้าขอบคุณเธอมากๆ เลยนะ ที่อยู่ข้างเค้าเสมอ  
+                    ทั้งๆ ที่บางทีเค้าก็ชอบทำตัวงี่เง่า เอาแต่ใจ  
+                    หรือพูดอะไรที่ไม่น่ารัก เค้าขอโทษจริงๆ นะ  
+                    สำหรับทุกอย่างที่เค้าทำให้เธอไม่สบายใจ  
+                </p>
+                <p>
+                    แต่เธอรู้ใช่ไหมว่าเค้ารักเธอมาก ต่อไปนี้  
+                    เค้าจะพยายามเป็นคนที่ดีขึ้น จะดูแลเธอให้ดีที่สุด  
+                    เหมือนที่เธอคอยดูแลเค้า  
+                </p>
+                <p>
+                    ขอบคุณที่ไม่เคยปล่อยเค้าไปเลยนะ  
+                    เธอคือคนสำคัญที่สุดของเค้าในทุกๆ วัน  
+                    ไม่ใช่แค่วาเลนไทน์วันเดียว  
+                </p>
+                <p class="signature">เด็กอ้วน 💕</p>
+            </div>
+            <p>
+                เลื่อนไปข้างล่างด้วยนะคะ
+            </p>
+            <!-- สไลด์โชว์รูปภาพ -->
+            <div class="slideshow-container">
+                <!-- สไลด์ที่ 1 -->
+                <div class="slide" id="slide1">
+                    <img src="S__8863774.jpg" alt="">
+                </div>
+
+                <!-- สไลด์ที่ 2 -->
+                <div class="slide" id="slide2">
+                    <img src="S__8888343_0.jpg" alt="">
+                </div>
+
+                <!-- สไลด์ที่ 3 -->
+                <div class="slide" id="slide3">
+                    <img src="S__8888344_0.jpg" alt="">
+                </div>
+
+                <div class="slide" id="slide4">
+                    <img src="S__8888343_0.jpg" alt="">
+                </div>
+
+                <div class="slide" id="slide5">
+                    <img src="S__8888342_0.jpg" alt="">
+                </div>
+
+                <div class="slide" id="slide6">
+                    <img src="S__8888341_0.jpg" alt="">
+                </div>
+
+                <div class="slide" id="slide7">
+                    <img src="S__8888340_0.jpg" alt="">
+                </div>
+            </div>
+
+            <!-- ฟอร์มตอบกลับ -->
+            <div class="response-form">
+                <p>อ้วนรักเค้าไหม? 🥺</p>
+                <input type="text" id="responseInput" placeholder="พิมพ์คำตอบที่นี่...">
+                <button onclick="checkResponse()">ส่งคำตอบ</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("showMessage").addEventListener("click", function() {
+            document.getElementById("specialMessage").classList.remove("hidden");
+            alert("รักเธอนะคะ 💕");
+
+            // ซ่อนรูปในหน้าแรก
+            document.querySelector(".photo").style.display = "none";
+        });
+
+        function checkResponse() {
+            let response = document.getElementById("responseInput").value.trim();
+            if (response.toLowerCase() === "") {
+                alert("ตอบเค้าเร็ววววว ทำไมอ้วนไม่ตอบ อ้วนไม่รักเค้า ชิ ❤️");
+            } else {
+                alert("อ้วนตอบว่า: "+ response + " 😊 เค้ายักอ้วงที่ฉุดเยยงับ");
+            }
+        }
+
+        // การสไลด์โชว์รูป
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function showSlides() {
+            slides.forEach((slide, index) => {
+                slide.style.display = 'none';
+                if (index === slideIndex) {
+                    slide.style.display = 'block';
+                }
+            });
+
+            slideIndex = (slideIndex + 1) % slides.length; // วนลูปไปที่สไลด์แรกเมื่อถึงสไลด์สุดท้าย
+        }
+
+        setInterval(showSlides, 2000); // เปลี่ยนทุกๆ 2 วินาที
+    </script>
+    <p>
+        ❤️ เด็กรักพี่ออยค่ะ ❤️
+    </p>
+</body>
+</html>
